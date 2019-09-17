@@ -6,3 +6,18 @@ h1{
   color: #c12258;
   line-height: 1.5;
 }
+
+p{
+  color: black;
+  font-size: 18pt;
+  padding-top: 15px;
+
+}
+a{
+  font-size: 18px;
+  color: #c12258;
+  text-decoration: underline;
+}
+/* :focus{
+  border: solid 1px blue
+} */
