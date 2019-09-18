@@ -20,5 +20,40 @@ a{
   text-decoration: underline;
 }
 /* :focus{
-  border: solid 1px blue
+  border: 1px solid blue
 } */
+
+/************* table******** */
+/*Table should have the following styles:
+
+    Table has 2px black border (make sure you format parameters as ‘px, weight, color’ order)
+    Column headers are always at least 150px wide, with 10px of padding. Column header text is white, centered, and uppercase with a dark red background (#7e0830).
+    Table cells have centered text with a 2px black border on only one side, and 15px padding on all sides.
+    Row headers have a 2px black border that matches the rest of the rows.
+    Every even numbered table row has a grey background (#dddddd), every add table row has a transparent background.
+    Hovering over a row changes the background color to light red (#fab9cf).
+*/
+table{
+  border: 2px solid black;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+th, td{
+  min-width: 150px;
+  padding: 10px 10px;
+  border-bottom: 2px solid black;
+  padding: 15px;
+}
+thead{
+  background-color: #7e0830;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* td{
+  border-top: 2px solid black;
+  padding: 15px; */
+}
+tbody tr:nth-child(even) {
+  background: #dddddd;
+}
