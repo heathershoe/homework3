@@ -1,6 +1,9 @@
 body{
   font-family: 'Quicksand', sans-serif;
-  background-image: url("images/pidgeon-background.jpg");
+
+  background-image: url('../images/pidgeon-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 h1{
   font-size: 2em;
