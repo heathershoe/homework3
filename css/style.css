@@ -8,12 +8,12 @@ body{
 h1{
   font-size: 2em;
   color: #c12258;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 p{
   color: black;
-  font-size: 18pt;
+  font-size: 18px;
   padding-top: 15px;
 
 }
@@ -22,24 +22,50 @@ a{
   color: #c12258;
   text-decoration: underline;
 }
-/* :focus{
-  border: 1px solid blue
-} */
+a:focus{
+  border: 1px solid blue;
+}
+footer{
+  background: black;
+  min-height: 60px;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
 
-/************* table******** */
-/*Table should have the following styles:
-
-    Table has 2px black border (make sure you format parameters as ‘px, weight, color’ order)
-    Column headers are always at least 150px wide, with 10px of padding. Column header text is white, centered, and uppercase with a dark red background (#7e0830).
-    Table cells have centered text with a 2px black border on only one side, and 15px padding on all sides.
-    Row headers have a 2px black border that matches the rest of the rows.
-    Every even numbered table row has a grey background (#dddddd), every add table row has a transparent background.
-    Hovering over a row changes the background color to light red (#fab9cf).
-*/
+/* ==========TABLE========== */
 table{
+  border-collapse: collapse;
+}
+thead th{
+  min-width: 150px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background: #7e0830;
+}
+tbody td{
+  text-align: center;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+tbody th{
+    border-bottom: 2px solid black;
+}
+tbody tr:nth-child(even) {
+  background: #dddddd;
+}
+/* table{
   border: 2px solid black;
+  border-radius: 10px;
   border-spacing: 0;
-  border-collapse: separate;
+  border-collapse: collapse;
 }
 th, td{
   min-width: 150px;
@@ -53,10 +79,10 @@ thead{
   text-align: center;
   text-transform: uppercase;
 }
-/* td{
-  border-top: 2px solid black;
-  padding: 15px; */
+thead tr:first-child,
+thead th:last-child{
+  border-radius: 10px;
 }
 tbody tr:nth-child(even) {
   background: #dddddd;
-}
+} */
